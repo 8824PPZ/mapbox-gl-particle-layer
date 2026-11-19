@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mapbox-gl-particle-layer</title>
+    <link rel="stylesheet" href="./demos/style.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <div class="panel">
+      <h1>mapbox-gl-particle-layer</h1>
+      <p class="meta">
+        GPU wind &amp; flow particles for Mapbox GL JS / MapLibre GL JS ·
+        <span class="stat" id="count">—</span> particles ·
+        <span class="stat" id="fps">—</span> fps
+      </p>
+
+      <pre><code>const layer = new ParticleLayer({
+  id: 'wind',
+  windSource: '/wind-global.png',
+});
+map.addLayer(layer);</code></pre>
+
+      <div class="nav">
+        <a href="./demos/maplibre.html">Basic (MapLibre)</a>
+        <a href="./demos/basic.html">Basic (Mapbox)</a>
+        <a href="./demos/color-ramp.html">Color ramps</a>
+        <a href="./demos/viewport-constrained.html">Viewport mode</a>
+      </div>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

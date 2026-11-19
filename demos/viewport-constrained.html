@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viewport constrained · wind particles</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <div class="panel">
+      <h1>Viewport constrained respawn</h1>
+      <p class="meta">
+        <span class="stat" id="count">—</span> particles · <span class="stat" id="fps">—</span> fps
+      </p>
+      <p class="hint">
+        Zoom into a region (z5+) and switch the mode on: particles are only recycled inside the
+        visible box, instead of across the whole 360°×170° field.
+      </p>
+
+      <div class="row">
+        <label for="constrain">Constrain</label>
+        <input id="constrain" type="checkbox" />
+        <output id="constrain-out">whole field</output>
+      </div>
+
+      <div class="row">
+        <label for="particles">Particles</label>
+        <input id="particles" type="range" min="2048" max="65536" step="2048" value="16384" />
+        <output id="particles-out">16 384</output>
+      </div>
+
+      <div class="nav">
+        <a href="./maplibre.html">Basic</a>
+        <a href="./basic.html">Mapbox</a>
+        <a href="./color-ramp.html">Color ramps</a>
+        <a href="../index.html">All demos</a>
+      </div>
+    </div>
+
+    <script type="module" src="./viewport-constrained.js"></script>
+  </body>
+</html>

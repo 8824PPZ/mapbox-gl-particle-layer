@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mapbox GL JS · wind particles</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <div class="panel">
+      <h1>Wind particles · Mapbox GL JS</h1>
+      <p class="meta">
+        <span class="stat" id="count">—</span> particles · <span class="stat" id="fps">—</span> fps
+      </p>
+      <p class="hint">Identical layer code, different runtime. Requires a Mapbox access token.</p>
+      <div class="nav">
+        <a href="./maplibre.html">MapLibre version</a>
+        <a href="./color-ramp.html">Color ramps</a>
+        <a href="./viewport-constrained.html">Viewport mode</a>
+        <a href="../index.html">All demos</a>
+      </div>
+    </div>
+
+    <div class="overlay" id="token-overlay" hidden>
+      <form class="card" id="token-form">
+        <h2>Mapbox access token</h2>
+        <p>
+          This demo draws on Mapbox's <code>light-v11</code> style, which needs a public
+          token. It is stored in <code>localStorage</code> and never leaves your browser.
+        </p>
+        <input type="text" id="token-input" placeholder="pk.eyJ1Ijo…" autocomplete="off" />
+        <div class="actions">
+          <button type="button" data-demo="maplibre">Use MapLibre instead</button>
+          <button class="primary" type="submit">Load map</button>
+        </div>
+      </form>
+    </div>
+
+    <script type="module" src="./basic.js"></script>
+  </body>
+</html>

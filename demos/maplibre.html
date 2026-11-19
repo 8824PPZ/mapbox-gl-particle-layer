@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MapLibre GL · wind particles</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <div class="panel">
+      <h1>Wind particles · MapLibre GL</h1>
+      <p class="meta">
+        <span class="stat" id="count">—</span> particles · <span class="stat" id="fps">—</span> fps
+      </p>
+      <p class="hint">
+        Every particle is advected by a 720×360 wind raster, entirely on the GPU.
+      </p>
+      <div class="nav">
+        <a href="./basic.html">Mapbox version</a>
+        <a href="./color-ramp.html">Color ramps</a>
+        <a href="./viewport-constrained.html">Viewport mode</a>
+        <a href="../index.html">All demos</a>
+      </div>
+    </div>
+
+    <script type="module" src="./maplibre.js"></script>
+  </body>
+</html>
